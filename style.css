@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap');
+
+/* RESET CSS TO BORDER-BOX */
+* {
+  box-sizing: border-box;
+}
+
+/* 900 AND UP */
+body {
+	font-family: Poppins;
+  background-color:#FAEAC3;
+  color:#292928;
+  margin: 40px auto 40px auto;
+  max-width: 1250px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h1 {
+  color: #FA4C0C;
+  font-size:11vw;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Lora;
+  line-height: 25%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  /* 
+  FONT-SIZE FROM https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+  CALCULATE FONTSIZE BASED ON VIEWPORT 
+  */
+  font-size: clamp(8rem, -1.9643rem + 17.7143vw, 11.875rem);
+  line-height: 80.5%;
+  color: #292928;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+h3 {
+  font-family: Poppins;
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  color: #292928;
+}
+
+h4{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 80.5%;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+h5{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 200px;
+  margin-bottom: 0%;
+}
+
+p{
+  font-family: Poppins;
+  font-style: normal;
+  /* 
+  FONT-SIZE FROM https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+  CALCULATE FONTSIZE BASED ON VIEWPORT 
+  */
+  font-size: clamp(1.125rem, 0.1607rem + 1.7143vw, 1.5rem);
+  color: #292928;
+  line-height: 130.5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  color: #292928;
+  font-size: 180px;
+  margin-bottom: 0%;
+  text-decoration:none;
+  padding-bottom: 2%;
+}
+
+a:hover {
+  color: #FA4C0C;
+  text-decoration: underline;
+}
+
+span{
+  color: #FA4C0C;
+}
+
+.block_wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #292928;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.block_wrapper_reversed{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: 1px solid #292928;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.header_right{
+  border-left: 1px solid #292928;
+  padding-left: 10%;
+}
+
+.header_left{
+  border-right: 1px solid #292928;
+  padding-right: 10%;
+}
+
+.para_right{
+  margin-left: 2%;
+}
+
+.para_left{
+  margin-right: 2%;
+}
+
+.para_beware{
+  border-right: 1px solid #292928;
+  padding-right: 2%;
+}
+
+.para_bekind{
+  border-left: 1px solid #292928;
+  padding-left: 2%;
+}
+
+.header_bekind{
+  padding: 0;
+}
+
+.header_beware{
+  padding: 0;
+}
+
+.header{
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 1px #292928;
+}
+
+.header_bottom{
+  transform: rotate(180deg);
+  padding-bottom: 15%;
+  padding-top: 1%;
+}
+
+/* TABLET 
+WORKS PERFECTLY IN CHROME. NOT AS PERFECT, BUT OK, IN SAFARI
+*/
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1{
+    font-size: 11vw;
+    line-height: 90%;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  h2{
+    font-size: 80px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+
+  h3{
+    font-size: 14px;
+  }
+
+  h4{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  a{
+    font-size: 60px;
+  }
+
+  .block_wrapper{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #292928;
+    padding-bottom: 30px;
+    padding-top: none;
+    align-items: unset;
+  }
+  
+  .block_wrapper_reversed{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #292928;
+    padding-bottom: 30px;
+    padding-top: none;
+    align-items: unset;
+  }
+
+  .header{
+    height: 100vh;
+    justify-content: space-around;
+  }
+
+  .header_right{
+    padding: 0;
+    border: none;
+  }
+  
+  .header_left{
+    padding: 0;
+    border: none;
+  }
+  
+  .para_beware{
+    padding: 0;
+    border: none;
+  }
+  
+  .para_bekind{
+    padding: 0;
+    border: none;
+  }
+
+  .para_right{
+    margin: 0;
+  }
+}
+
+/* MOBILE 
+WORKS PERFECTLY IN CHROME. NOT AS PERFECT, BUT OK, IN SAFARI
+*/
+@media only screen and (max-width: 400px) {
+
+  body{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  h1{
+    font-size:11vw;
+    line-height: 90%;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+
+  h2{
+    font-size: 80px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+
+  h3{
+    font-size: 14px;
+  }
+
+  h4{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  a{
+    font-size: 60px;
+  }
+
+  .block_wrapper{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #292928;
+    padding-bottom: 30px;
+    padding-top: none;
+    align-items: unset;
+  }
+  
+  .block_wrapper_reversed{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #292928;
+    padding-bottom: 30px;
+    padding-top: none;
+    align-items: unset;
+  }
+
+  .header{
+    height: 100vh;
+    justify-content: space-around;
+  }
+
+  .header_right{
+    border: none;
+    padding: 0;
+  }
+  
+  .header_left{
+    border: none;
+    padding: 0;
+  }
+  
+  .para_beware{
+    border: none;
+  }
+  
+  .para_bekind{
+    border: none;
+  }
+
+  .para_right{
+    margin: 0;
+  }
+
+}
